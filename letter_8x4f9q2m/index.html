@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>一封信</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>00宝贝</title>
     <style>
         body {
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            font-family: "Microsoft YaHei", sans-serif;            background-color: #f5f5f5;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #fff0f5 0%, #ffeef8 100%);
             color: #333;
             line-height: 1.8;
-            position: relative;
-        }
-        .letter-container {
+            padding: 20px;
             max-width: 800px;
-            margin: 40px auto;
-            padding: 50px;
-            background: rgba(255, 255, 255, 0.97);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 1;
+            margin: 0 auto;
+            min-height: 100vh;
         }
-        .letter-content {
-            white-space: pre-line;
-            font-size: 16px;
-            color: #2c3e50;
-        }
-        .letter-title {
-            font-size: 24px;
-            color: #1a1a1a;
+        h1 {
+            text-align: center;
+            color: #d6336c;
+            font-size: 2.5em;
             margin-bottom: 30px;
-            font-weight: normal;
+            letter-spacing: 2px;
         }
-        .letter-text {
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(214, 51, 108, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        p {
             margin-bottom: 20px;
+            text-align: justify;
         }
-        .letter-list {
+        ul {
             margin: 20px 0;
-            padding-left: 20px;
+            padding-left: 25px;
         }
-        .letter-list li {
-            margin: 10px 0;
+        li {
+            margin: 12px 0;
             line-height: 1.6;
         }
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #d6336c;
+            font-size: 1.1em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 2em;
+            color: #d6336c;
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
         @media (max-width: 768px) {
-            .letter-container {
-                padding: 30px;
-                margin: 20px;
+            body {
+                padding: 15px;
             }
-            .letter-title {
-                font-size: 20px;
+            .content {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
-    <div class="letter-container">
-        <div class="letter-content">
-            <h1 class="letter-title">00宝贝</h1>
-            
-            <div class="letter-text">
-            好像很久没有写信了，也好久没认真把情绪说清楚。这段时间虽然我们没有再次沟通情感上的事，但沉默并不是不在意，而是藏着太多没说出口的委屈、误解，还有我越来越清晰的反思。
-            </div>
+    <h1>00宝贝</h1>
+    <div class="content">
+        <p>好像很久没有写信了，也好久没认真把情绪说清楚。这段时间虽然我们没有再沟通情感上的事，但沉默并不是不在意，而是藏着太多没说出口的委屈、误解，还有我越来越清晰的反思。</p>
 
-            <div class="letter-text">
-            你说我有四个问题。我一开始确实有情绪，但冷静下来后，我认真想了很多遍，每一条我都能理解，也愿意承认：在某些时候，我确实没处理好。
-            </div>
+        <p>你说我有四个问题。一开始我也有情绪，但冷静下来后，我认真想了很多遍，每一条我都能理解，也愿意承认：在某些时候，我确实没处理好。</p>
+        <ul>
+            <li>关于手机，我会尊重你的边界，不再去越线；</li>
+            <li>关于异性的事情，我会控制自己的情绪，不再在没有证据的前提下胡思乱想、破坏我们之间的信任；</li>
+            <li>关于姨妈期的争执，我愿意学着更体谅、更冷静，在你最需要被理解的时候，做那个可以靠一靠的人；</li>
+            <li>关于"我为了你"这种话，我知道那听起来像情绪勒索，以后我会注意自己的表达方式，不用这些话去表达爱，而是靠行动、靠细节，让你踏实感受到。</li>
+        </ul>
 
-            <ul class="letter-list">
-                <li>关于手机，我会尊重你的边界，不再去越线。</li>
-                <li>关于异性的事情，我会控制自己的情绪，不再在没有证据的前提下胡思乱想、破坏我们之间的信任。</li>
-                <li>关于姨妈期的争执，我愿意学着更体谅、更冷静，在你最需要被理解的时候，做那个可以靠一靠的人。</li>
-                <li>关于"我为了你"这种话，我知道那听起来像情绪勒索，以后我会注意自己的表达方式，不用付出来标榜爱，而是用行动默默表达。</li>
-            </ul>
+        <p>但如果你愿意听我说完，我想告诉你，其实我觉得这四件事Backgrounds behind，还有更深层的问题，我们都该一起看看。</p>
 
-            <div class="letter-text">
-            但如果你愿意听我说完，我想告诉你，其实我觉得这四件事的背后，还有更深层的问题，我们都该一起看看。
-            </div>
+        <p>我觉得我们之间的问题，不止是"手机""异性""争吵"这些表象，而是出在我们之间的边界感和沟通方式。有时候我们太容易陷入"争对错"，太想让对方先低头，结果却忽略了最该被保护的，是"我们"本身。</p>
 
-            <div class="letter-text">
-            我觉得我们之间的难，不止是"手机"
-            </div>
-        </div>
+        <p>我们都不是完美的人，也不是永远理智的大人。真正的爱，从来不是挑剔和完美的互相较量，而是在对方不那么完美的时候，还能愿意给彼此一个台阶、一次理解、一个拥抱。</p>
+
+        <p>其实在我相处的日子里，我一直在调整自己，试着让我们更舒服地靠近。只是表达方式不够好，也许让你误会了我的用心。</p>
+
+        <p>我想你知道，我的让步不是妥协，而是因为在意：</p>
+        <ul>
+            <li>每天视频，是希望你安心，也减少误会；</li>
+            <li>沉默地看你，不是冷淡，而是不想在情绪上头时彼此受伤；</li>
+            <li>有时候转账给你，只是想你能买点喜欢的东西，换个好心情；</li>
+            <li>很多小事，比如默默记下你喜欢的东西、每次主动来找你，我都放心里，想着以后能让你多一点快乐。</li>
+        </ul>
+
+        <p>这些不是刻意讨好，而是我表达爱的方式。可能很粗糙，但都是认真的。</p>
+
+        <p>没有沟通的这些天，并不是我没想法，只是怕我的一句话不合时宜，怕你更难过，也怕我们又陷入"互相拉扯却越来越远"的循环。</p>
+
+        <p>写这封信，不是为了让你心软，而是我真心希望能把那些"卡在我们之间的刺"，一根一根地拔出来。</p>
+
+        <p>如果你愿意，我们可以试着重新开始。不是退回过去，而是试着站到彼此更近的位置：不再用沉默当武器，不再把问题藏在憋着等爆炸，而是愿意坐下来，好好把彼此的心听清楚。</p>
+
+        <div class="signature">想你。</div>
     </div>
+    <div class="footer">🩷</div>
 </body>
 </html>
