@@ -10,7 +10,7 @@
             margin: 0;
             padding: 20px;
             min-height: 100vh;
-            font-family: "Microsoft YaHei", sans-serif;
+            font-family: "Microsoft YaHei", sans-serif;            background-color: #f5f5f5;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -18,49 +18,76 @@
             line-height: 1.8;
             position: relative;
         }
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: inherit;
-            filter: blur(5px);
-            z-index: -1;
-        }
         .letter-container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 1;
         }
         .letter-content {
             white-space: pre-line;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .letter-title {
+            font-size: 24px;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .letter-text {
+            margin-bottom: 20px;
+        }
+        .letter-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .letter-list li {
+            margin: 10px 0;
+            line-height: 1.6;
         }
         @media (max-width: 768px) {
             .letter-container {
-                padding: 20px;
-                margin: 10px;
+                padding: 30px;
+                margin: 20px;
+            }
+            .letter-title {
+                font-size: 20px;
             }
         }
     </style>
 </head>
-<body style="background-image: url('background.jpg');">
+<body>
     <div class="letter-container">
         <div class="letter-content">
-            <!-- 在这里写入您的信件内容 -->
-            亲爱的xxx：
+            <h1 class="letter-title">00宝贝</h1>
+            
+            <div class="letter-text">
+            好像很久没有写信了，也好久没认真把情绪说清楚。这段时间虽然我们没有再次沟通情感上的事，但沉默并不是不在意，而是藏着太多没说出口的委屈、误解，还有我越来越清晰的反思。
+            </div>
 
-            [在这里写入您的信件内容]
+            <div class="letter-text">
+            你说我有四个问题。我一开始确实有情绪，但冷静下来后，我认真想了很多遍，每一条我都能理解，也愿意承认：在某些时候，我确实没处理好。
+            </div>
 
-            祝好
-            xxx
-            [日期]
+            <ul class="letter-list">
+                <li>关于手机，我会尊重你的边界，不再去越线。</li>
+                <li>关于异性的事情，我会控制自己的情绪，不再在没有证据的前提下胡思乱想、破坏我们之间的信任。</li>
+                <li>关于姨妈期的争执，我愿意学着更体谅、更冷静，在你最需要被理解的时候，做那个可以靠一靠的人。</li>
+                <li>关于"我为了你"这种话，我知道那听起来像情绪勒索，以后我会注意自己的表达方式，不用付出来标榜爱，而是用行动默默表达。</li>
+            </ul>
+
+            <div class="letter-text">
+            但如果你愿意听我说完，我想告诉你，其实我觉得这四件事的背后，还有更深层的问题，我们都该一起看看。
+            </div>
+
+            <div class="letter-text">
+            我觉得我们之间的难，不止是"手机"
+            </div>
         </div>
     </div>
 </body>
